@@ -12,6 +12,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public String showPage(){
-        return "view/main-menu";
+        return "main-menu";
     }
 }
