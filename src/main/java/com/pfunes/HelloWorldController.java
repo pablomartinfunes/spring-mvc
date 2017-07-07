@@ -3,6 +3,7 @@ package com.pfunes;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -25,11 +26,9 @@ public class HelloWorldController {
     }
 
     @RequestMapping("/processForm2")
-    public String processFormVersionTwo(HttpServletRequest request, Model model){
+    public String processFormVersionTwo(@RequestParam("studentName") String name, Model model){
 
-        String name = request.getParameter("studentName");
-
-        String message = "Heyy " + name.toUpperCase();
+        String message = "Hey!! " + name.toUpperCase();
 
         model.addAttribute("message", message);
 
