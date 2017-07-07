@@ -1,21 +1,20 @@
 <%--
   Created by IntelliJ IDEA.
   User: pfunes
-  Date: 05/07/17
-  Time: 09:24
+  Date: 07/07/17
+  Time: 15:54
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Spring Example</title>
+    <title>Student Confirmation</title>
 </head>
 <body>
 
-<h2>Spring Web MVC Demo - Prueba</h2>
-
-<a href="/showForm">Hello World Form</a>
+The Student is confirmed: ${student.firstName} ${student.lastName}
 <br><br>
-<a href="/student/showForm">Student Form</a>
+Country:${student.country}
+
 </body>
 </html>
